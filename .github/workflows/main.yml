@@ -9,6 +9,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
           AWS_SECRET_ACCESS_KEY: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
+          SPGITHUB_TOKEN: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
         run: |
           yarn install
           yarn build
