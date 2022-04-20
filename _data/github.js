@@ -32,7 +32,7 @@ module.exports = async function scores() {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`,
+        'Authorization': `Bearer ${process.env.SPGITHUB_TOKEN}`,
       },
       body: JSON.stringify({ query })
     }
