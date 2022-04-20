@@ -11,6 +11,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
           SPGITHUB_TOKEN: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
         run: |
+          echo "SPGITHUB_TOKEN=$SPGITHUB_TOKEN" > ./.env
           yarn install
           yarn build
           aws s3 cp \
