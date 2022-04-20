@@ -15,7 +15,9 @@ jobs:
           yarn install
           yarn build
           aws s3 cp \
+            ./_site/ s3://www.weka.digital \
             --recursive \
             --acl public-read \
-            --region ap-southeast-2 \ 
-            ./_site/ s3://www.weka.digital          
+            --region ap-southeast-2  \
+            --debug
+                      
