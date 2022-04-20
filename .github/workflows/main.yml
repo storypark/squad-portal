@@ -18,5 +18,4 @@ jobs:
             --recursive \
             --acl public-read \
             --region ap-southeast-2 \ 
-            ./_site/ [s3://www.weka.digital] # change it
-          
+            ./_site/ s3://www.weka.digital          
