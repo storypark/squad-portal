@@ -13,3 +13,10 @@ yarn
 echo "GITHUB_TOKEN=x" > .env
 yarn start
 ```
+
+## DEBUGGING
+
+```
+DEBUG=Eleventy* yarn start
+```
+

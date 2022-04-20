@@ -1,4 +1,5 @@
 require('dotenv').config();
+//console.log(process.env.GITHUB_TOKEN);
 const formatDistance = require('date-fns/formatDistance');
 const format = require('date-fns/format');
 const parseISO = require('date-fns/parseISO');

@@ -1,4 +1,4 @@
-module.exports.CYCLE_START_DATE = "2022-02-06";
+module.exports.CYCLE_START_DATE = "2022-04-04";
 
 
 module.exports.EARLY_FEEDBACK = '0. Early Feedback Requested';
