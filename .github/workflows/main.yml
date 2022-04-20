@@ -10,7 +10,8 @@ jobs:
           AWS_ACCESS_KEY_ID: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
           AWS_SECRET_ACCESS_KEY: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
         run: |
-          npx @11ty/eleventy
+          yarn install
+          yarn run eleventy
           aws s3 cp \
             --recursive \
             --acl public-read \
