@@ -11,7 +11,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
         run: |
           yarn install
-          yarn build eleventy
+          yarn build
           aws s3 cp \
             --recursive \
             --acl public-read \
