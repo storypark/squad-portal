@@ -1,6 +1,6 @@
 # Weka Squad Portal
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c6d2e6f9-1dd6-435a-8d4b-3a51fed24896/deploy-status)](https://app.netlify.com/sites/weka-squad/deploys)
+[![](https://github.com/storypark/squad-portal/actions/workflows/main.yml/badge.svg)](https://github.com/storypark/squad-portal/actions/workflows/)
 
 Production site is at [https://weka.digital](https://weka.digital).
 
@@ -14,9 +14,11 @@ echo "SPGITHUB_TOKEN=x" > .env
 yarn start
 ```
 
-## DEBUGGING
+## Debugging
 
 ```
 DEBUG=Eleventy* yarn start
 ```
 
+## Deployment
+Github actions is used to deploy the site on a schedule (which is in UTC) and on merge to master.
