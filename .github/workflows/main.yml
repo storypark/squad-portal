@@ -1,5 +1,11 @@
 name: Trigger AWS Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
+  schedule:
+    # Note these hours are UTC
+    - cron: '0 1,3,19,22 * * 0-5'
 jobs:
   build_deploy:
     runs-on: ubuntu-latest
@@ -7,14 +13,16 @@ jobs:
       - uses: actions/checkout@master
       - name: up
         env:
-          AWS_ACCESS_KEY_ID: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
-          AWS_SECRET_ACCESS_KEY: \{\%\- raw \-\%\}$\{\%\- endraw \-\%\}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SPGITHUB_TOKEN: ${{ secrets.SPGITHUB_TOKEN }}
         run: |
+          echo "SPGITHUB_TOKEN=$SPGITHUB_TOKEN" > ./.env
           yarn install
-          yarn run eleventy
+          yarn build
           aws s3 cp \
+            ./_site/ s3://www.weka.digital \
             --recursive \
             --acl public-read \
-            --region ap-southeast-2 \ 
-            ./_site/ [s3://www.weka.digital] # change it
-          
+            --region ap-southeast-2 
+

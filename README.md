@@ -10,7 +10,7 @@ Dev setup:
 
 ```
 yarn
-echo "GITHUB_TOKEN=x" > .env
+echo "SPGITHUB_TOKEN=x" > .env
 yarn start
 ```
 
