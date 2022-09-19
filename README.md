@@ -22,3 +22,4 @@ DEBUG=Eleventy* yarn start
 
 ## Deployment
 Github actions is used to deploy the site on a schedule (which is in UTC) and on merge to master.
+
