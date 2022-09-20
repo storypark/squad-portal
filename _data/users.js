@@ -4,7 +4,7 @@ module.exports = [
     nickname: 'Chad',
     tagline: 'A bit of trouble but we keep him around <em>🦥</em>',
     bio: '???',
-    current: true,
+    alumni: true,
   },
   {
     githubLogin: 'libbyschuknight',
@@ -103,5 +103,33 @@ module.exports = [
   {
     githubLogin: 'Jessenw',
     nickname: 'Jesse',
+  },
+  {
+    githubLogin: 'winseyli',
+    nickname: 'Winsey',
+  },
+  {
+    githubLogin: 'BenS-SP',
+    nickname: 'Ben',
+  },
+  {
+    githubLogin: 'camfindlay',
+    nickname: 'Cam',
+  },
+  {
+    githubLogin: 'dan-storypark',
+    nickname: 'Dan',
+  },
+  {
+    githubLogin: 'nataliehorne',
+    nickname: 'Nat',
+  },
+  {
+    githubLogin: 'StoryparkNick',
+    nickname: 'Nick',
+  },
+  {
+    githubLogin: 'stuart-storypark',
+    nickname: 'Stuart',
   },
 ]
