@@ -1,3 +1,6 @@
+# REPO ARCHIVED!
+27/10/2023 - Ben Salt - Archived repo and have removed all associated AWS config.
+
 # Weka Squad Portal
 
 [![](https://github.com/storypark/squad-portal/actions/workflows/main.yml/badge.svg)](https://github.com/storypark/squad-portal/actions/workflows/)
